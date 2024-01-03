@@ -3,7 +3,7 @@ package test;
 import org.testng.annotations.Test;
 
 import constants.Constants;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import utility.ElementUtility;
 
 import org.testng.annotations.BeforeMethod;
