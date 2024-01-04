@@ -32,6 +32,8 @@ public class BaseTest {
   public void beforeMethod(@Optional ("chrome") String browser) {
 	  if(browser.equalsIgnoreCase("chrome"))
 	  {
+		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\driver\\chromedriver.exe");
+
 		  //WebDriverManager.chromedriver().setup();
 		  driver=new ChromeDriver();
 	  }
