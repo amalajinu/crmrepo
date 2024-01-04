@@ -16,6 +16,7 @@ public class LoginTest  extends BaseTest{
   public void verifyLogIn(String username,String password) {
 	  LoginPage lp=new LoginPage(driver);
 	  lp.doLogin(username,password);
+	  System.out.println("log in success");
   }
   @DataProvider
   public Object[][] dp() throws InvalidFormatException, IOException
